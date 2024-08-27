@@ -54,6 +54,9 @@
     <ClCompile Include="ThreadNode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Union.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linearList.h">

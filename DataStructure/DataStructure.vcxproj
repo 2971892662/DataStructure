@@ -152,6 +152,7 @@
     <ClCompile Include="sqQueue.cpp" />
     <ClCompile Include="sqStack.cpp" />
     <ClCompile Include="ThreadNode.cpp" />
+    <ClCompile Include="Union.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BracketMatch.h" />
