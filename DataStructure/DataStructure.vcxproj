@@ -151,6 +151,7 @@
     <ClCompile Include="SqList_S.cpp" />
     <ClCompile Include="sqQueue.cpp" />
     <ClCompile Include="sqStack.cpp" />
+    <ClCompile Include="ThreadNode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BracketMatch.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="SqList_S.h" />
     <ClInclude Include="sqQueue.h" />
     <ClInclude Include="sqStack.h" />
+    <ClInclude Include="ThreadNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
