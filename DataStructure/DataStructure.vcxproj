@@ -145,6 +145,7 @@
     <ClCompile Include="LkQueue.cpp" />
     <ClCompile Include="lqStack.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MartixGraph.cpp" />
     <ClCompile Include="singleLinkList_A.cpp" />
     <ClCompile Include="singleLinkList_B.cpp" />
     <ClCompile Include="SqList_D.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="linearList.h" />
     <ClInclude Include="LkQueue.h" />
     <ClInclude Include="lqStack.h" />
+    <ClInclude Include="MatrixGraph.h" />
     <ClInclude Include="singleLinkList_A.h" />
     <ClInclude Include="singleLinkList_B.h" />
     <ClInclude Include="SqList_D.h" />
