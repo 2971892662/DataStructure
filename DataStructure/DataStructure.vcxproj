@@ -170,6 +170,7 @@
     <ClInclude Include="sqQueue.h" />
     <ClInclude Include="sqStack.h" />
     <ClInclude Include="ThreadNode.h" />
+    <ClInclude Include="TopologicalSort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

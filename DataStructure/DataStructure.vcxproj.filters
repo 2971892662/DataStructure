@@ -61,7 +61,7 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="TopologicalSort.cpp">
-      <Filter>头文件</Filter>
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +102,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="MatrixGraph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TopologicalSort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
