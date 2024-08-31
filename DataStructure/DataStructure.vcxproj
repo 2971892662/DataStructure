@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BracketMatch.cpp" />
+    <ClCompile Include="BSTSearch.cpp" />
     <ClCompile Include="FunStack.cpp" />
     <ClCompile Include="linearList.cpp" />
     <ClCompile Include="LkQueue.cpp" />
@@ -158,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BracketMatch.h" />
+    <ClInclude Include="BSTSearch.h" />
     <ClInclude Include="FunStack.h" />
     <ClInclude Include="linearList.h" />
     <ClInclude Include="LkQueue.h" />
