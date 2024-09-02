@@ -1,11 +1,15 @@
 #include <iostream>
 #include <stdio.h>
 #include <string.h>
-#include "BSTSearch.h"
+#include "Sort.h"
 using namespace std;
 
+
+
 int main() {
-	int a[] = { 11,2,13,4,-2 };
-	BSTNode* res = createBSTree(a, 5);
-	preBSTTraverse(res);
+	int s[] = { 11,2,13,4,-2 };
+	ShellInsertSort(s, sizeof(s) / sizeof(int));
+	for (int i = 0; i < sizeof(s) / sizeof(int); i++) {
+		cout << s[i] << " ";
+	}
 }

@@ -36,6 +36,7 @@ void preBSTTraverse(BSTNode* root) {
 		preBSTTraverse(root->right);
 	}
 }
+
 /*
 int main() {
 	int a[] = { 11,2,13,4,-2 };

@@ -149,6 +149,7 @@
     <ClCompile Include="MartixGraph.cpp" />
     <ClCompile Include="singleLinkList_A.cpp" />
     <ClCompile Include="singleLinkList_B.cpp" />
+    <ClCompile Include="Sort.cpp" />
     <ClCompile Include="SqList_D.cpp" />
     <ClCompile Include="SqList_S.cpp" />
     <ClCompile Include="sqQueue.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="MatrixGraph.h" />
     <ClInclude Include="singleLinkList_A.h" />
     <ClInclude Include="singleLinkList_B.h" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="SqList_D.h" />
     <ClInclude Include="SqList_S.h" />
     <ClInclude Include="sqQueue.h" />
