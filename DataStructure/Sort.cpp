@@ -1,6 +1,8 @@
 //排序
 //1.插入排序
 //1.1直接插入排序
+#include <iostream>
+using namespace std;
 void DirectInsertSort(int a[], int len) {
 	int temp = 0;
 	for (int i = 1; i < len; i++) {
@@ -99,4 +101,60 @@ void QuickSwapSort(int a[], int start,int end) {
 		QuickSwapSort(a, low + 1, end);
 	}
 }
-
+//3.选择排序
+//3.1简单选择排序
+void SimpleSelectSort(int a[], int len) {
+	for (int i = 0; i < len-1; i++) {
+		int min = i;	//一个值得学习的地方
+		for (int j = i+1; j<len; j++) {
+			if (a[j] < a[min]) {
+				min = j;
+			}
+			if (min != i) {
+				swap(a[i], a[min]);
+			}
+		}
+	}
+}
+//3.2堆排序
+//len是不包括a[0]的
+void HeapAdjust(int a[], int root, int len) {
+	a[0] = a[root];
+	for (int i = 2 * root; i <= len; i = i * 2) {
+		if (i < len && a[i] < a[i + 1]) {
+			i++;
+		}
+		if (a[0] >= a[i]) {
+			break;	//不是return
+		}
+		else {
+			a[root] = a[i];
+			root = i;	//以执行上面一条更新语句
+		}
+	}
+	a[root] = a[0];
+}
+void BuildMaxHeap(int a[], int len) {
+	for (int i = len / 2; i > 0; i--) {
+		HeapAdjust(a, i, len);
+	}
+}
+void HeapSelectSort(int a[], int len) {
+	BuildMaxHeap(a, len);
+	for (int i = 1; i <= len; i++) {
+		cout << a[i] << " ";
+	}
+	cout << endl;
+	for (int i = len; i > 1; i--) {
+		cout << a[1] << " ";
+		swap(a[i], a[1]);
+		HeapAdjust(a, 1, i - 1);
+	}
+	cout << a[1];
+}
+/*
+int main() {
+	int s[] = { 0,22,-3,4,15,66,7,1 };
+	HeapSelectSort(s,sizeof(s) / sizeof(int)-1);
+}
+*/

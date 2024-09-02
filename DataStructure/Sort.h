@@ -1,5 +1,10 @@
+using namespace std;
 void DirectInsertSort(int a[], int len);
 void HalfInsertSort(int a[], int len);
 void ShellInsertSort(int a[], int len);
 void BubbleSwapSort(int a[], int len);
 void QuickSwapSort(int a[], int start, int end);
+void SimpleSelectSort(int a[], int len);
+void HeapAdjust(int a[], int root, int len);
+void BuildMaxHeap(int a[], int len);
+void HeapSelectSort(int a[], int len);
