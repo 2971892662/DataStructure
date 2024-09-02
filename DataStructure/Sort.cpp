@@ -53,6 +53,50 @@ void ShellInsertSort(int a[], int len) {
 		}
 	}
 }
-//2.选择排序
-
+//2.交换排序
+void swap(int& a, int& b) {
+	int temp = a;
+	a = b;
+	b = temp;
+}
+//2.1冒泡排序
+void BubbleSwapSort(int a[], int len) {
+	for (int i = 0; i < len - 1; i++) {
+		bool flag = false;
+		for (int j = len - 1; j >i; j--) {
+			if (a[j] < a[j - 1]) {
+				swap(a[j], a[j - 1]);
+				flag = true;
+			}
+		}
+		if (flag == false) {
+			return;
+		}
+	}
+}
+//2.2快速排序
+void QuickSwapSort(int a[], int start,int end) {
+	int low = start;
+	int high = end;
+	int pivot = a[start];
+	while (low < high) {
+		while (low<high && a[high]>pivot) {
+			high--;
+		}
+		swap(a[low], a[high]);
+		//a[low] = a[high];
+		while (low < high && a[low] < pivot) {
+			low++;
+		}
+		swap(a[low], a[high]);
+		//a[high] = a[low];	//能用swap吗？ 实测可以
+	}
+	//a[low] = pivot;	如果使用swap甚至不需要这步
+	if (start <= low - 1) {
+		QuickSwapSort(a, start, low - 1);
+	}
+	if (low + 1 <= end){
+		QuickSwapSort(a, low + 1, end);
+	}
+}
 
